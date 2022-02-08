@@ -1,0 +1,90 @@
+.card
+    &_line
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            top: -5px
+            height: 1px
+            width: 100%
+            background-color: #E5E5E5
+        &::before
+            position: absolute
+            left: 0
+            top: -5px
+            content: ''
+            height: 1px
+            width: 50px
+            z-index: 1
+            background-color: #000
+.accessories
+    &__line
+        margin-top: 65px
+    &__title
+        margin-top: 65px
+        margin-bottom: 60px
+    &__card
+        .card__description
+            margin-top: 35px
+    .card_line
+        max-width: 223px
+        .card__description
+            max-width: 250px
+            margin-top: 14px
+.card
+    &__description
+        &_tablet
+            display: none
+        &_mobile
+            display: none
+@media (max-width: 1024px)
+    .accessories
+        &__line
+            margin-top: 10px
+        &__title
+            margin-bottom: 40px
+        .card
+            &_line
+                max-width: 325px
+                align-items: start
+                &::before
+                    top: -1px
+                &::after
+                    top: -1px
+                .card__description
+                    max-width: 325px
+                    margin-top: 17px
+            &__description
+                margin-top: 44px
+        
+    .card
+        &__description
+            &_tablet
+                display: block
+            &_desktop
+                display: none
+@media (max-width: 768px)
+    .accessories
+        .card:nth-child(3)
+            max-width: 140px
+        .card:nth-child(4)
+            max-width: 140px
+        &__title
+            margin-top: 35px
+            margin-bottom: 30px
+        &__card:nth-child(1)
+            margin-bottom: 40px
+        .card
+            margin-bottom: 40px
+            &__description
+                &_tablet
+                    display: none
+                &_mobile
+                    display: block
+            &_line
+                width: 50%
+                .card__description
+                    font-size: 12px
+                    line-height: 17px
+                    max-width: 140px
+                    margin-top: 19px

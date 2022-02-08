@@ -1,0 +1,63 @@
+.app
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 303px
+    &__description
+        margin-top: 14px
+        line-height: 24px
+    &s
+        padding-bottom: 150px
+        &-wrapper
+            display: flex
+            flex-wrap: wrap
+            gap: 50px 20px
+        &__title
+            margin-top: 40px
+            margin-bottom: 55px
+@media (max-width: 1024px)
+    .app
+        max-width: 210px
+        &__description
+            font-size: 14px
+            line-height: 21px
+        &s
+            &-wrapper
+                gap: 45px 20px
+@media (max-width: 768px)
+    .app:nth-child(2n) .app__description
+        order: -1
+    .app:nth-child(1) .app__img
+        margin-top: 15px
+        margin-right: 25px
+        margin-left: 7px
+    .app:nth-child(2) .app__img
+        margin-top: 18px
+        margin-left: 17px
+    .app:nth-child(2)
+        margin-bottom: 5px
+    .app:nth-child(3) .app__img
+        margin-top: 14px
+        margin-left: 8px
+    .app:nth-child(4) .app__img
+        margin-top: 15px
+        margin-left: 17px
+    .app:nth-child(5) .app__img
+        margin-top: 11px
+        margin-left: 7px
+    .app
+        flex-direction: row
+        max-width: unset
+        &__img
+            flex-shrink: 0
+            margin-right: 20px
+        &__description
+            max-width: 205px
+            font-size: 12px
+            line-height: 17px
+        &s
+            &__title
+                margin-top: 20px
+                margin-bottom: 15px
+                line-height: 32px
+        
