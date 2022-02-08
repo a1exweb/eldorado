@@ -179,13 +179,13 @@ button {
   background-color: #000;
 }
 
+.name-mobile {
+  display: none;
+}
+
 .main-screen__main-title {
   margin-top: 40px;
   margin-bottom: 48px;
-}
-
-.main-screen__name-mobile {
-  display: none;
 }
 
 .main-title {
@@ -578,10 +578,6 @@ button {
     height: 18px;
   }
 
-  .container {
-    max-width: 320px;
-  }
-
   .course-name {
     display: none;
   }
@@ -590,12 +586,12 @@ button {
     max-width: 290px;
   }
 
-  .main-screen__name-mobile {
+  .name-mobile {
     display: block;
     font-size: 10px;
     background-color: #EFEFEF;
     height: 24px;
-    padding: 5px 0;
+    padding: 5px 15px;
   }
 
   .main-screen__main-title {
