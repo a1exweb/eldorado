@@ -1,0 +1,75 @@
+.scanner
+    &__line
+        margin-top: 60px
+    &__title
+        margin-top: 42px
+        margin-bottom: 53px
+    &__content
+        display: flex
+    &__banner
+        margin-right: 40px
+    &__benefits
+        max-width: 500px
+        list-style: none
+.benefits
+    &__item
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+    &__img
+        margin-right: 42px
+    &__description
+        max-width: 340px
+        line-height: 24px
+.title
+    &_tablet
+        display: none
+@media (max-width: 1024px)
+    .scanner
+        &__line
+            margin-top: 10px
+        &__banner
+            max-width: 325px
+            margin-right: 41px
+        &__benefits
+            max-width: 325px
+    .benefits
+        &__img
+            margin-right: 62px
+        &__description
+            max-width: 203px
+            font-size: 14px
+            line-height: 21px
+    .title
+        &_tablet
+            display: block
+        &_desktop
+            display: none
+@media (max-width: 768px)
+    .scanner
+        position: relative
+        &__line
+            margin-top: 0
+        &__title
+            margin-top: 21px
+            margin-bottom: 35px
+        &__content
+            flex-direction: column
+        &__banner
+            position: absolute
+            top: 80px
+            left: -20px
+        &__content
+            margin-top: 235px
+    .benefits
+        &__item
+            flex-direction: column
+        &__description
+            margin-top: 15px
+            max-width: unset
+        &__img
+            margin-left: 60px
+        &__item:nth-child(1)
+            margin-bottom: 31px
+        &__item:nth-child(2)
+            margin-bottom: 32px

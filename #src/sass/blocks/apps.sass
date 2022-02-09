@@ -15,6 +15,10 @@
         &__title
             margin-top: 40px
             margin-bottom: 55px
+.app:nth-child(4) .app__description
+        margin-top: 16px
+.app:nth-child(5) .app__description
+    margin-top: 16px
 @media (max-width: 1024px)
     .app
         max-width: 210px
@@ -22,9 +26,18 @@
             font-size: 14px
             line-height: 21px
         &s
+            &__title
+                margin-top: 41px
+                margin-bottom: 56px
+            &-wrapper
+                gap: 43px 20px
+    .app:nth-child(4) .app__img
+        margin-right: 2px
+@media (max-width: 768px)
+    .app
+        &s
             &-wrapper
                 gap: 45px 20px
-@media (max-width: 768px)
     .app:nth-child(2n) .app__description
         order: -1
     .app:nth-child(1) .app__img
@@ -35,16 +48,19 @@
         margin-top: 18px
         margin-left: 17px
     .app:nth-child(2)
-        margin-bottom: 5px
+        margin-top: 1px
+        margin-bottom: 4px
     .app:nth-child(3) .app__img
-        margin-top: 14px
-        margin-left: 8px
+        margin-top: 15px
+        margin-left: 7px
     .app:nth-child(4) .app__img
         margin-top: 15px
         margin-left: 17px
     .app:nth-child(5) .app__img
-        margin-top: 11px
+        margin-top: 14px
         margin-left: 7px
+    .app:nth-child(5) .app__description
+        margin-top: 7px
     .app
         flex-direction: row
         max-width: unset
