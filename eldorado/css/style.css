@@ -862,3 +862,33 @@ button {
     line-height: 32px;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .card {
+    width: 300px;
+  }
+
+  .card__description {
+    width: 200px;
+  }
+
+  .accessories .card__img {
+    width: 200px;
+  }
+
+  .accessories .card_line::before {
+    left: 0;
+  }
+
+  .accessories .card_line::after {
+    left: 0;
+  }
+
+  .app {
+    width: 300px;
+  }
+
+  .app__description {
+    width: 300px;
+  }
+}

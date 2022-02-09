@@ -89,3 +89,13 @@
                     line-height: 17px
                     max-width: 140px
                     margin-top: 19px
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    .accessories
+        .card
+            &__img
+                width: 200px
+            &_line
+                &::before
+                    left: 0
+                &::after
+                    left: 0
